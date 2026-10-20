@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18515075617">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18515075617');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robotinic - Engenharia e Montagens Industriais</title>
   
+  <!-- GOOGLE TAG (gtag.js) - GOOGLE ADS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18515075617"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18515075617');
+  </script>
+
   <!-- SCRIPT DE RASTREAMENTO DO RD STATION -->
   <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/0a79aedd-08ca-431c-bc99-31670a34da30-loader.js"></script>
 
@@ -65,7 +65,7 @@
           <i class="fa-solid fa-envelope text-brand-orange"></i>
           <span>engenharia@robotinicengenharia.com.br</span>
         </a>
-        <a href="https://wa.me/5511926030681" target="_blank" class="flex items-center gap-2 hover:text-brand-orange transition-colors">
+        <a href="https://wa.me/5511926030681" target="_blank" onclick="gtag_report_conversion();" class="flex items-center gap-2 hover:text-brand-orange transition-colors">
           <i class="fa-brands fa-whatsapp text-brand-orange"></i>
           <span>(11) 92603-0681</span>
         </a>
@@ -183,318 +183,27 @@
   <section id="sobre" class="py-20 bg-slate-50 mt-12">
     <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <div class="inline-block px-3 py-1 bg-brand-navy/10 text-brand-navy text-xs font-extrabold uppercase rounded-full mb-3">
-          Quem Somos
-        </div>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-brand-navy mb-6">
-          Excelência em Engenharia e Montagens de Máquinas
-        </h2>
-        <p class="text-slate-600 mb-4 leading-relaxed">
-          A <strong class="text-brand-navy">ROBOTINIC ENGENHARIA E MONTAGENS</strong> é uma empresa voltada para o fornecimento de soluções completas em engenharia mecânica, automação e instalação de máquinas e equipamentos industriais.
-        </p>
-        <p class="text-slate-600 mb-6 leading-relaxed">
-          Combinamos corpo técnico especializado e metodologias modernas para garantir alta eficiência produtiva, redução de custos operacionais e confiabilidade total no comissionamento de novos equipamentos.
-        </p>
-        
-        <div class="grid grid-cols-2 gap-4 pt-2">
-          <div class="border-l-4 border-brand-orange pl-4">
-            <span class="block text-2xl font-black text-brand-navy">100%</span>
-            <span class="text-xs text-slate-500 font-semibold uppercase">Foco na Precisão</span>
-          </div>
-          <div class="border-l-4 border-brand-navy pl-4">
-            <span class="block text-2xl font-black text-brand-navy">Chave na Mão</span>
-            <span class="text-xs text-slate-500 font-semibold uppercase">Turnkey Solutions</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Montagem Industrial Robotinic" class="rounded-2xl shadow-2xl w-full object-cover h-[420px]">
-        <div class="absolute -bottom-6 -left-6 bg-brand-navy text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs border border-slate-700">
-          <i class="fa-solid fa-quote-left text-brand-orange text-2xl mb-2"></i>
-          <p class="text-xs text-slate-300">Garantimos total alinhamento operacional e máximo rendimento do seu maquinário.</p>
-        </div>
+        <div class="inline-block px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-xs font-bold uppercase tracking-wider mb-4">A Empresa</div>
+        <h2 class="text-3xl font-bold text-brand-navy mb-4">Excelência e Rigor Técnico em Cada Projeto</h2>
+        <p class="text-slate-600 mb-6">A Robotinic atua na integração de sistemas automatizados, montagens industriais mecânicas e elétricas, além de adequações às normas regulamentadoras de segurança.</p>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES SECTION -->
-  <section id="servicos" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="px-3 py-1 bg-brand-orange/10 text-brand-orange text-xs font-extrabold uppercase rounded-full">Especialidades</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-brand-navy mt-3 mb-4">Serviços e Soluções de Engenharia</h2>
-        <p class="text-slate-600">Atuamos desde a fase de planejamento técnico e projeto até a montagem final e startup na planta industrial.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-orange/30 hover:shadow-xl transition-all group">
-          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange transition-colors">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-          </div>
-          <h3 class="text-xl font-bold text-brand-navy mb-3">Montagem de Máquinas & Linhas</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Montagem mecânica, posicionamento, nivelamento e ancoragem de máquinas individuais ou linhas de produção completas.
-          </p>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-orange/30 hover:shadow-xl transition-all group">
-          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange transition-colors">
-            <i class="fa-solid fa-robot"></i>
-          </div>
-          <h3 class="text-xl font-bold text-brand-navy mb-3">Automação & Células Robotizadas</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Integração de robôs industriais, programação de CLPs, IHMs e desenvolvimento de rotinas de controle de processo.
-          </p>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-orange/30 hover:shadow-xl transition-all group">
-          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange transition-colors">
-            <i class="fa-solid fa-vial-circle-check"></i>
-          </div>
-          <h3 class="text-xl font-bold text-brand-navy mb-3">Comissionamento & Startup</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Testes operacionais em carga e vazio, calibração de sensores e acompanhamento do início da produção.
-          </p>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-orange/30 hover:shadow-xl transition-all group">
-          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange transition-colors">
-            <i class="fa-solid fa-gears"></i>
-          </div>
-          <h3 class="text-xl font-bold text-brand-navy mb-3">Manutenção Mecânica & Eletrônica</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Revisão completa, substituição de componentes mecânicos e retrofit elétrico para modernização de equipamentos antigos.
-          </p>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-orange/30 hover:shadow-xl transition-all group">
-          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange transition-colors">
-            <i class="fa-solid fa-file-contract"></i>
-          </div>
-          <h3 class="text-xl font-bold text-brand-navy mb-3">Adequação às Normas NR-12</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Implementação de sistemas de segurança mecânicos e eletrônicos para proteção e conformidade de equipamentos industriais.
-          </p>
-        </div>
-
-        <!-- Service 6 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-orange/30 hover:shadow-xl transition-all group">
-          <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange transition-colors">
-            <i class="fa-solid fa-drafting-compass"></i>
-          </div>
-          <h3 class="text-xl font-bold text-brand-navy mb-3">Projetos de Engenharia Dedicados</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Consultoria técnica e elaboração de projetos customizados para otimização do fluxo operacional de montagens.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT & FORM SECTION -->
-  <section id="contato" class="py-20 bg-slate-100">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid md:grid-cols-12 gap-12">
-        
-        <!-- Info Column -->
-        <div class="md:col-span-5 space-y-8">
-          <div>
-            <span class="px-3 py-1 bg-brand-orange/10 text-brand-orange text-xs font-extrabold uppercase rounded-full">Fale Conosco</span>
-            <h2 class="text-3xl font-extrabold text-brand-navy mt-3">Solicite um Orçamento para seu Projeto</h2>
-            <p class="text-slate-600 mt-2">Nossa equipe técnica está pronta para analisar as especificações da sua empresa.</p>
-          </div>
-
-          <div class="space-y-6">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-white rounded-xl shadow flex items-center justify-center text-brand-orange text-xl flex-shrink-0">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-brand-navy">E-mail Comercial</h4>
-                <a href="mailto:engenharia@robotinicengenharia.com.br" class="text-sm text-slate-600 hover:text-brand-orange break-all">engenharia@robotinicengenharia.com.br</a>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-white rounded-xl shadow flex items-center justify-center text-brand-orange text-xl flex-shrink-0">
-                <i class="fa-brands fa-whatsapp"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-brand-navy">Atendimento WhatsApp</h4>
-                <a href="https://wa.me/5511926030681" target="_blank" class="text-sm text-slate-600 hover:text-brand-orange">(11) 92603-0681</a>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-white rounded-xl shadow flex items-center justify-center text-brand-navy text-xl flex-shrink-0">
-                <i class="fa-solid fa-clock"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-brand-navy">Horário de Atendimento</h4>
-                <p class="text-sm text-slate-600">Segunda a Sexta: 08:00 às 18:00</p>
-                <p class="text-xs text-slate-500 mt-2 pt-2 border-t border-slate-200">
-                  📍 Sede em Jundiaí - SP | Atendimento em todo o Brasil.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Form Column -->
-        <div class="md:col-span-7">
-          <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
-            <h3 class="text-2xl font-bold text-brand-navy mb-6">Formulário de Contato</h3>
-            
-            <!-- Message Status Notification -->
-            <div id="form-status" class="hidden mb-6 p-4 rounded-xl text-sm font-semibold"></div>
-
-            <!-- Netlify Form Integration -->
-            <form id="contact-form" name="orcamento" method="POST" data-netlify="true" class="space-y-4">
-              <!-- Netlify Hidden Input -->
-              <input type="hidden" name="form-name" value="orcamento" />
-              
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Seu Nome *</label>
-                  <input type="text" name="nome" required placeholder="Digite seu nome completo" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-navy text-sm">
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">E-mail *</label>
-                  <input type="email" name="email" required placeholder="seuemail@empresa.com.br" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-navy text-sm">
-                </div>
-              </div>
-
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Telefone / WhatsApp *</label>
-                  <input type="tel" name="telefone" required placeholder="(11) 99999-9999" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-navy text-sm">
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Tipo de Serviço</label>
-                  <select name="tipo-servico" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-navy text-sm bg-white">
-                    <option value="Montagem de Maquinas">Montagem de Máquinas</option>
-                    <option value="Automacao e Robotica">Automação e Robótica</option>
-                    <option value="Manutencao e Retrofit">Manutenção / Retrofit</option>
-                    <option value="Adequacao NR-12">Adequação NR-12</option>
-                    <option value="Outros Serviços">Outros Serviços</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Detalhes do Projeto / Mensagem *</label>
-                <textarea name="mensagem" rows="4" required placeholder="Descreva brevemente as necessidades do seu projeto..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-navy text-sm"></textarea>
-              </div>
-
-              <button type="submit" id="submit-btn" class="w-full bg-brand-orange hover:bg-brand-orangeDark text-white py-4 rounded-xl font-bold shadow-lg hover:shadow-orange-500/20 transition-all text-center">
-                Enviar
-              </button>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-brand-navy text-white pt-16 pb-8 border-t border-slate-800 mt-auto">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-12">
-      <div class="space-y-4 md:col-span-2">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-brand-orange rounded-lg flex items-center justify-center text-white font-bold">
-            <i class="fa-solid fa-robot text-xl"></i>
-          </div>
-          <span class="text-2xl font-black tracking-wider">ROBOTINIC</span>
-        </div>
-        <p class="text-slate-400 text-sm max-w-sm">
-          Soluções completas de engenharia, montagem de máquinas, automação industrial e robótica.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-brand-orange mb-4">Navegação</h4>
-        <ul class="space-y-2 text-sm text-slate-300">
-          <li><a href="#home" class="hover:text-brand-orange">Início</a></li>
-          <li><a href="#sobre" class="hover:text-brand-orange">A Empresa</a></li>
-          <li><a href="#servicos" class="hover:text-brand-orange">Serviços</a></li>
-          <li><a href="#contato" class="hover:text-brand-orange">Contato</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-brand-orange mb-4">Contato Directo</h4>
-        <p class="text-sm text-slate-300 mb-1">engenharia@robotinicengenharia.com.br</p>
-        <p class="text-sm text-slate-300 mb-2">(11) 92603-0681</p>
-        <p class="text-xs text-slate-400 pt-2 border-t border-slate-800">
-          📍 Sede em Jundiaí - SP | Atendimento em todo o Brasil.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-      <p>&copy; ROBOTINIC Engenharia e Montagens. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- FLOATING WHATSAPP BUTTON (Elevated Position) -->
-  <a href="https://wa.me/5511926030681" target="_blank" aria-label="Contato via WhatsApp" class="fixed bottom-24 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl transition-all transform hover:scale-110 active:scale-95 group">
-    <i class="fa-brands fa-whatsapp"></i>
-    <span class="absolute right-16 bg-slate-900 text-white text-xs py-1 px-3 rounded shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
-      Falar no WhatsApp
-    </span>
-  </a>
-
-  <!-- JS LOGIC FOR MOBILE MENU AND AJAX FORM SUBMISSION -->
+  <!-- FUNÇÃO DE DISPARO DA CONVERSÃO NO GOOGLE ADS -->
   <script>
-    // Mobile Menu Toggle
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // AJAX Form Submission for Netlify (Prevents 404 Redirect)
-    const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-    const submitBtn = document.getElementById('submit-btn');
-
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      
-      submitBtn.disabled = true;
-      submitBtn.innerText = "Enviando...";
-
-      const formData = new FormData(contactForm);
-
-      fetch('/', {
-        method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-      })
-      .then(() => {
-        formStatus.classList.remove('hidden', 'bg-red-100', 'text-red-700');
-        formStatus.classList.add('bg-emerald-100', 'text-emerald-800');
-        formStatus.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i> Orçamento enviado com sucesso! Entraremos em contato em breve.';
-        contactForm.reset();
-      })
-      .catch((error) => {
-        formStatus.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-800');
-        formStatus.classList.add('bg-red-100', 'text-red-700');
-        formStatus.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-2"></i> Ocorreu um erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.';
-      })
-      .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerText = "Enviar";
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18515075617/hCv7CLezgKAdEKHE1vxE',
+          'event_callback': callback
       });
-    });
+      return false;
+    }
   </script>
-
 </body>
 </html>
